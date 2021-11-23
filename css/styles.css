@@ -159,14 +159,14 @@ img {
 .hero {
   background-color: var(--background-color);
   padding: 200px 0;
-  background-image: url(../images/background-hero.jpg);
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0, 4),
-    rgba(47, 48, 58, 0, 4)
-  );
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background-hero.jpg);
 }
 .headline {
   font-size: 44px;
@@ -195,6 +195,15 @@ img {
   border: transparent;
   margin: 0 auto;
   padding: 10px 32px;
+}
+
+.backdrop0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /********Advantages********/
@@ -243,14 +252,19 @@ img {
   margin-right: 0px;
 }
 .advatages-icon {
-  width: 270px;
-  height: 120px;
-  background-color: var(--background-icons-color);
+  width: 70px;
+  height: 70px;
 }
 .advantages-tumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
   border-color: transparent;
   border-radius: 4px;
+  background-color: var(--background-icons-color);
 }
 /********WE-DOING********/
 .we-doing {
